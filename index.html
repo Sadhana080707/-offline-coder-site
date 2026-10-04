@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline Coder — Code, Compile, Run. Even With Zero Internet.</title>
+<style>
+  * { box-sizing: border-box; }
+  body{margin:0;background:#081426;font-family:"Segoe UI",Arial,sans-serif;color:#e8f1ff}
+  a{color:#55b0ff}
+  a:hover{color:#8ccaff}
+  img,svg{max-width:100%}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:10px;font-weight:700;font-size:17px;text-decoration:none;border:1px solid transparent;cursor:pointer}
+  .btn-primary{background:#16c76b;color:#052b18;border-color:#16c76b}
+  .btn-primary:hover{background:#1ddb79;color:#052b18}
+  .btn-ghost{background:transparent;color:#e8f1ff;border-color:#29486f}
+  .card{background:#0c1b33;border:1px solid #203a5e;border-radius:14px;padding:28px}
+  .badge{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:#fff;flex-shrink:0;margin:0 auto 16px}
+  .step-num{width:36px;height:36px;border-radius:50%;background:#1685f8;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0}
+  .lang-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  @media (max-width: 700px) {
+    .lang-grid{grid-template-columns:repeat(2,1fr)}
+    .why-grid{grid-template-columns:1fr}
+    h1{font-size:34px !important}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div style="display:flex;align-items:center;justify-content:space-between;padding:20px 32px;border-bottom:1px solid #1e3555;flex-wrap:wrap;gap:12px">
+  <div style="display:flex;align-items:center;gap:12px">
+    <div style="width:40px;height:40px;border-radius:10px;background:#1688f8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px">&lt;/&gt;</div>
+    <div style="font-size:19px;font-weight:700">Offline <span style="color:#1598ff">Coder</span></div>
+  </div>
+  <a href="https://drive.google.com/uc?export=download&id=1NMmqP8-CnMbc2xgturaXWYHmBSREEqtx" class="btn btn-primary" style="padding:10px 20px;font-size:14px">Download for Windows</a>
+</div>
+
+<!-- HERO -->
+<div style="max-width:860px;margin:0 auto;padding:72px 24px 56px;text-align:center">
+  <div style="display:inline-block;padding:7px 16px;border-radius:999px;background:#0c2518;border:1px solid #1d4a2e;color:#35e68a;font-size:13px;font-weight:700;margin-bottom:28px">● 100% Offline — No Internet Required</div>
+  <h1 style="font-size:48px;line-height:1.15;margin:0 0 20px;font-weight:800">Code. Compile. Run.<br>Even With Zero Internet.</h1>
+  <p style="font-size:18px;line-height:1.6;color:#9ab5d7;max-width:600px;margin:0 auto 32px">
+    A free desktop app for C, C++, Java and Python — built for college labs and exam halls where the internet can't be trusted. No installs, no setup, no admin rights needed.
+  </p>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+    <a href="https://drive.google.com/uc?export=download&id=1NMmqP8-CnMbc2xgturaXWYHmBSREEqtx" class="btn btn-primary">⬇ Download for Windows</a>
+    <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+  </div>
+  <div style="margin-top:18px;color:#7e9abf;font-size:13px">Free · One-click install · Works without an internet connection</div>
+</div>
+
+<!-- APP PREVIEW -->
+<div style="max-width:960px;margin:0 auto 72px;padding:0 24px">
+  <div style="border-radius:16px;border:1px solid #203a5e;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,0.45)">
+    <div style="background:#0c1b33;padding:14px 20px;display:flex;gap:8px;border-bottom:1px solid #203a5e">
+      <div style="width:11px;height:11px;border-radius:50%;background:#2a486f"></div>
+      <div style="width:11px;height:11px;border-radius:50%;background:#2a486f"></div>
+      <div style="width:11px;height:11px;border-radius:50%;background:#2a486f"></div>
+    </div>
+    <div style="background:#071326;padding:28px;font-family:Consolas,monospace;font-size:14px;line-height:1.8;color:#d6e5f8;overflow-x:auto">
+      <div style="color:#7e9abf">#include &lt;iostream&gt;</div>
+      <div style="color:#7e9abf">using namespace std;</div>
+      <div>&nbsp;</div>
+      <div>int main() {</div>
+      <div>&nbsp;&nbsp;cout &lt;&lt; "Hello, Offline Coder!";</div>
+      <div>&nbsp;&nbsp;return 0;</div>
+      <div>}</div>
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid #203a5e;color:#35e68a">▶ Hello, Offline Coder!</div>
+    </div>
+  </div>
+</div>
+
+<!-- LANGUAGES -->
+<div id="how-it-works" style="max-width:1080px;margin:0 auto;padding:0 24px 72px">
+  <h2 style="text-align:center;font-size:30px;margin:0 0 12px">Four Languages. One App.</h2>
+  <p style="text-align:center;color:#9ab5d7;font-size:16px;margin:0 0 40px">Every compiler runs locally — nothing is sent over the internet, ever.</p>
+  <div class="lang-grid">
+    <div class="card" style="text-align:center">
+      <div class="badge" style="background:#234a83">C</div>
+      <div style="font-weight:700;margin-bottom:6px">C</div>
+      <div style="color:#8fb1d9;font-size:13px">GCC, bundled in</div>
+    </div>
+    <div class="card" style="text-align:center">
+      <div class="badge" style="background:#147ce6">C++</div>
+      <div style="font-weight:700;margin-bottom:6px">C++</div>
+      <div style="color:#8fb1d9;font-size:13px">G++, bundled in</div>
+    </div>
+    <div class="card" style="text-align:center">
+      <div class="badge" style="background:#2a2030">JV</div>
+      <div style="font-weight:700;margin-bottom:6px">Java</div>
+      <div style="color:#8fb1d9;font-size:13px">OpenJDK, bundled in</div>
+    </div>
+    <div class="card" style="text-align:center">
+      <div class="badge" style="background:#1f3654">PY</div>
+      <div style="font-weight:700;margin-bottom:6px">Python</div>
+      <div style="color:#8fb1d9;font-size:13px">Python 3, bundled in</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY -->
+<div style="background:#0a1a30;border-top:1px solid #1e3555;border-bottom:1px solid #1e3555;padding:64px 24px">
+  <div style="max-width:920px;margin:0 auto" class="why-grid">
+    <div>
+      <div style="color:#ff8a8a;font-weight:700;font-size:13px;letter-spacing:0.04em;margin-bottom:10px">THE PROBLEM</div>
+      <h3 style="font-size:22px;margin:0 0 14px">Online compilers need internet you don't have</h3>
+      <p style="color:#9ab5d7;line-height:1.7;margin:0">Rural and tier-3 college labs often have unreliable or no internet. Students waste exam time configuring compilers instead of writing code.</p>
+    </div>
+    <div>
+      <div style="color:#35e68a;font-weight:700;font-size:13px;letter-spacing:0.04em;margin-bottom:10px">THE FIX</div>
+      <h3 style="font-size:22px;margin:0 0 14px">Everything runs on the machine, offline</h3>
+      <p style="color:#9ab5d7;line-height:1.7;margin:0">Offline Coder bundles real compilers inside the app itself. Copy it to any lab PC and it just works — no network, no admin password, no setup.</p>
+    </div>
+  </div>
+</div>
+
+<!-- INSTALL -->
+<div style="max-width:680px;margin:0 auto;padding:72px 24px">
+  <h2 style="text-align:center;font-size:30px;margin:0 0 40px">Installing takes under a minute</h2>
+  <div style="display:flex;flex-direction:column;gap:26px">
+    <div style="display:flex;gap:18px;align-items:flex-start">
+      <div class="step-num">1</div>
+      <div><div style="font-weight:700;margin-bottom:4px">Download the installer</div><div style="color:#9ab5d7;font-size:15px">Click the Download button above.</div></div>
+    </div>
+    <div style="display:flex;gap:18px;align-items:flex-start">
+      <div class="step-num">2</div>
+      <div><div style="font-weight:700;margin-bottom:4px">If you see a safety warning, that's normal</div><div style="color:#9ab5d7;font-size:15px">Google may say it "can't scan this file" — click the file name again to download anyway. Windows may then say "Windows protected your PC" — click "More info" → "Run anyway". This happens for all free apps without a paid certificate.</div></div>
+    </div>
+    <div style="display:flex;gap:18px;align-items:flex-start">
+      <div class="step-num">3</div>
+      <div><div style="font-weight:700;margin-bottom:4px">Double-click to install</div><div style="color:#9ab5d7;font-size:15px">One click — no admin password, no extra screens.</div></div>
+    </div>
+    <div style="display:flex;gap:18px;align-items:flex-start">
+      <div class="step-num">4</div>
+      <div><div style="font-weight:700;margin-bottom:4px">Start coding — completely offline</div><div style="color:#9ab5d7;font-size:15px">Pick a language, write code, hit Run. No internet needed, ever.</div></div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:44px">
+    <a href="https://drive.google.com/uc?export=download&id=1NMmqP8-CnMbc2xgturaXWYHmBSREEqtx" class="btn btn-primary">⬇ Download for Windows</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="border-top:1px solid #1e3555;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;color:#7e9abf;font-size:13px;flex-wrap:wrap;gap:12px">
+  <div>Offline Coder — built by a student, for students.</div>
+  <div>Code • Compile • Learn • Offline</div>
+</div>
+
+</body>
+</html>
